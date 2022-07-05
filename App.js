@@ -72,7 +72,7 @@ const App: () => Node = () => {
           }}>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits. _MAITRY VAGHASIYA_!!!
+            screen and then come back to see your edits. _MAITRY VAGHASIYA_!!!123456...
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
