@@ -15,25 +15,52 @@ export default function App() {
   // a2 = arr.concat(a1)
   // console.log(a2);
 
-  let ans = a1.some((b) => b>50)
-  console.log(ans);
+  
+
+  // let aa = arr.find((c) => c>3)
+  // console.log(aa)
+
+  // let x = arr.map((a,i) => {
+  //     return a
+  //   }
+  // );
+  // console.log(x);
+
+  // let m = arr.map((x) => {
+  //   let n = arr.splice(2,1,30)
+  //   console.log(n);
+  // })
+
+  // let y = a1.filter((c) => c>60)
+  // // return c>60;
+  // console.log(y);
+
+  let xy = {"a","c",67,78}
+
+  for(a in xy){
+    console.log(xy[a]);
+
+  }
+
+  // let x = arr.filter((b) => b>3);
+  // console.log(x);
   
 
 
   return (
     <View>
-      {
+       {/* {
         
-        // ans.map((a) => {
-        //   return (
-        //     <Text>{a}</Text>
+        ans.map((a) => {
+          return (
+            <Text>{a}</Text>
             
             
 
-        //   )
+          )
 
-        // })
-      }
+        })
+      }  */}
 
     </View>
   )
