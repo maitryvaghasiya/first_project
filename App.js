@@ -26,21 +26,19 @@ export default function App() {
   // );
   // console.log(x);
 
-  // let m = arr.map((x) => {
-  //   let n = arr.splice(2,1,30)
-  //   console.log(n);
-  // })
+  let a = arr.map((d,i)=>{
+    if(i===2){                                  // replace element
+      return 90
+    }else{
+      return d
+    }
+  })
+  console.log(a);
 
   // let y = a1.filter((c) => c>60)
   // // return c>60;
   // console.log(y);
 
-  let xy = {"a","c",67,78}
-
-  for(a in xy){
-    console.log(xy[a]);
-
-  }
 
   // let x = arr.filter((b) => b>3);
   // console.log(x);
