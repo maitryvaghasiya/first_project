@@ -30,22 +30,44 @@
 
 
 
+// import { View, Text, TouchableOpacity } from 'react-native'
+// import React, { useState } from 'react'
+
+// export default function Country() {
+
+//   let [countryName, setCountryname] = useState("USA");
+
+//   let changeCountry = ()=>{
+//     setCountryname("India")
+//   }
+//   return (
+//     <View>
+//       <Text>{countryName}</Text>
+
+//       <TouchableOpacity onPress={changeCountry}>
+//         <Text>Change Country</Text>
+//       </TouchableOpacity>
+//     </View>
+//   )
+// }
+
+
 import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
+import City from './City';
 
 export default function Country() {
+  let [countryName, setCountry] = useState("India");
 
-  let [countryName, setCountryname] = useState("USA");
-
-  let changeCountry = ()=>{
-    setCountryname("India")
+  let changeCountry = () => {
+    setCountry("usa")
   }
   return (
     <View>
-      <Text>{countryName}</Text>
-
+      <Text>{countryName}</Text> 
+      <City country_name={countryName}/>
       <TouchableOpacity onPress={changeCountry}>
-        <Text>Change Country</Text>
+        <Text>Change</Text>
       </TouchableOpacity>
     </View>
   )

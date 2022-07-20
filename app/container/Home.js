@@ -22,8 +22,6 @@ export default class Home extends Component {
         <TouchableOpacity onPress={this.changeName}>
           <Text>Change Name</Text>
         </TouchableOpacity>
-
-
       </View>
     )
   }

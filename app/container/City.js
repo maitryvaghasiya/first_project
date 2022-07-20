@@ -32,7 +32,10 @@
 // }
 
 
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+// 
+
+
+import { View, Text, TouchableOpacity, StyleSheet,Image } from 'react-native'
 import React, { useState } from 'react'
 
 export default function City() {
@@ -43,10 +46,11 @@ export default function City() {
   let changeCity = () => {
     setCityName("Agra")
     setFamousPlace("Tajmahal")
+    
   }
   return (
     <View style={styles.container}>
-      {/* <Image source={require("../")}/> */}
+      <Image style={styles.img} source={require("../container/akbar.jpg")}/>
       <Text style={styles.city}>{cityName}</Text>
       <Text style={styles.place}>{famousPlace}</Text>
       <TouchableOpacity style={styles.button} onPress={changeCity}>
@@ -79,7 +83,26 @@ let styles = StyleSheet.create({
     alignItems: "center",
     padding: 30,
     // fontSize: 50,
-
+  },
+  img:{
+    height:300,
+    width:500,
     
   }
-})
+}) 
+
+// import { View, Text } from 'react-native'
+// import React from 'react'
+
+// export default function City(props) {
+
+//   return (
+//     <View>
+//       {
+//         props.country_name === "India" ?
+//         <Text>Delhi</Text> :
+//         <Text>New York</Text>
+//       }
+//     </View>
+//   )
+// }
