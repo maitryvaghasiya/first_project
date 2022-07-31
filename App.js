@@ -8,20 +8,24 @@ import Course from './app/container/Course'
 import SubCourse from './app/container/SubCourse'
 import Employee from './app/container/Employee'
 import Salary from './app/container/Salary'
+import Time from './app/container/Time'
+import Calc from './app/container/Calc '
 
 export default class App extends Component {
   render() {
     return (
-      <View>
+      <>
        {/* <Home /> */}
        {/* <Country /> */}
        {/* <City /> */}
        {/* <Up_down_btn /> */}
        {/* <Course /> */}
        {/* <SubCourse /> */}
-       <Employee />
+       {/* <Employee /> */}
        {/* <Salary /> */}
-      </View>
+       <Time />
+       {/* <Calc /> */}
+      </>
     )
   }
 }

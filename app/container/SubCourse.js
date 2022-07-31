@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text ,StyleSheet} from 'react-native'
 import React from 'react'
 
 export default function SubCourse(props) {
@@ -15,8 +15,19 @@ export default function SubCourse(props) {
   return (
     <View>
       {
-        <Text>Sub Course : {sub}</Text>
+        <Text style={styles.sb}>Sub Course : {sub}</Text>
       }
     </View>
   )
 }
+
+let styles = StyleSheet.create({
+  sb: {
+    fontSize:20,
+    textAlign:"center",
+    lineHeight:50,
+    borderColor:"white",
+    borderBottomWidth:8,
+    fontWeight:"600"
+  }
+})

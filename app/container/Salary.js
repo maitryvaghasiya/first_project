@@ -1,4 +1,5 @@
-import { View, Text } from 'react-native'
+
+import { View, Text,StyleSheet } from 'react-native'
 import React from 'react'
 
 export default function Salary(props) {
@@ -21,11 +22,29 @@ export default function Salary(props) {
     }
 
   return (
-    <View>
-        <Text>Basic Salary : {b_salary}</Text>
+    <View style ={styles.btn}>
+        <Text style ={styles.salary}>Basic Salary : {b_salary}</Text>
         
-        <Text>Bonus : {bonus}</Text>
-        <Text>Total Salary : {b_salary + bonus}</Text>
+        <Text style ={styles.salary}>Bonus : {bonus}</Text>
+        <Text style ={styles.salary}>Total Salary : {b_salary + bonus}</Text>
     </View>
   )
 }
+
+let styles = StyleSheet.create({
+    // btn:{
+    //     flex:1,
+    //     justifyContent:"space-around"
+    // },
+    salary: {
+        borderWidth:1,
+        width:280,
+        padding:20,
+        fontSize:20,
+        fontWeight:"600",
+        borderRadius:20,
+        backgroundColor:"black",
+        color:"white",
+        marginTop:30
+    }
+})
