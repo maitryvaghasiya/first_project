@@ -102,8 +102,6 @@ let styles = StyleSheet.create({
     font: {
         color : "white",
         fontSize: 20
-    }
-
-    
+    }    
 
 })

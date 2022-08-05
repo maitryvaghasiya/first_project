@@ -10,6 +10,8 @@ import Employee from './app/container/Employee'
 import Salary from './app/container/Salary'
 import Time from './app/container/Time'
 import Calc from './app/container/Calc '
+import Icon from './app/container/Icon'
+import GstCalcy from './app/container/GstCalcy'
 
 export default class App extends Component {
   render() {
@@ -25,6 +27,8 @@ export default class App extends Component {
        {/* <Salary /> */}
        <Time />
        {/* <Calc /> */}
+       {/* <Icon /> */}
+       {/* <GstCalcy /> */}
       </>
     )
   }

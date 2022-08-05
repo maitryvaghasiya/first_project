@@ -1,4 +1,4 @@
-// import { Text, View } from 'react-native'
+// import { Text, View,StyleSheet } from 'react-native'
 // import React, { Component } from 'react'
 
 // export default class Time extends Component {
@@ -40,12 +40,42 @@
 //     //2.Display (Whenever state value changed)
 //   render() {
 //     return (
-//       <View>
-//         <Text>{this.state.time.toLocaleTimeString()}</Text>
+//       <View style={styles.clr}>
+//         <View style={styles.bg}>
+//         <Text style={styles.font}>{this.state.time.toLocaleTimeString()}</Text>
+//       </View>
 //       </View>
 //     )
 //   }
 // }
+
+// let styles = StyleSheet.create({
+//     clr:{
+//         flex:1,
+//         backgroundColor:"black",
+//         alignItems:"center",
+//         justifyContent:"center",
+
+//     },
+//     bg:{    
+//         borderWidth:4,
+//         borderWidth:4,
+//         borderColor:"white",
+//         borderRadius:20,
+//         width:200,
+//         height:100,
+//         alignItems:"center",
+//         justifyContent:"center",
+//         alignContent:"center",
+//         backgroundColor:"white",
+//     },
+//     font:{
+//         fontSize:40,
+//         color:"black",
+//     }
+
+
+// })
 
 
 
@@ -75,16 +105,26 @@ export default function Time() {
 
     //2
     return (
-        <View style ={styles.watch}>
+        <View style={styles.mm}>
+            <View style ={styles.watch}>
             <Text style={styles.tm}>{time.toLocaleTimeString()}</Text>
         </View>
+        </View>
+       
+
     )
 }
 
 
 let styles=StyleSheet.create({
+    mm:{
+        flex:1,
+        backgroundColor:"black",
+        alignItems:"center",
+        justifyContent:"center"
+
+    },
     watch:{
-        // flex:1,
         borderWidth:4,
         borderColor:"white",
         borderRadius:200,
@@ -92,14 +132,12 @@ let styles=StyleSheet.create({
         height:200,
         alignItems:"center",
         justifyContent:"center",
-        alignContent:"center",
+        // alignContent:"center",
         backgroundColor:"white",
-        marginTop:100,
-        marginLeft:110
     },
     tm:{
         fontSize:40,
-        color:"black"
+        color:"black",
          
     }
 })
